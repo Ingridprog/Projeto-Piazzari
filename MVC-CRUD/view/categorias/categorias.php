@@ -32,7 +32,6 @@
         require_once('view/header.php');
     ?>
     <div class="container_frm">
-        
         <div class="conteudo center">
             <h1 class="titulo texto_center titulo_principal"> Administração de categorias</h1>
             <h1 class="titulo letra_white titulo_categoria center">CRIE CATEGORIAS</h1>

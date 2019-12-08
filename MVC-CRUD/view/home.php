@@ -41,7 +41,7 @@
                             <div class="menu_nome letras letra_white">Categorias</div>    
                         </div>  
                     </a>
-                    <a href="">
+                    <a href="subcategoriasindex.php">
                         <div class="menu_itens">
                             <div class="menu_icone"><img src="view/img/subcategorias.png" alt="img" title="Subcategorias" class="img_icon"></div> 
                             <div class="menu_nome letras letra_white">Subcategorias</div>    

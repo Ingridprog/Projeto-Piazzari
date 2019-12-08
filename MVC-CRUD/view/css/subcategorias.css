@@ -1,0 +1,78 @@
+#frm_subcat{
+    width: 698px;
+    height: 270px;
+    border: 1px solid #4f4f54;
+}
+
+#sltcat{
+    width: 200px;
+    height: 30px;
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+.container_select{
+    width: 480px;
+    height: 60px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#txtselect{
+    width: 200px;
+    height: 60px;
+    font-size: 22px;
+    float: left;
+}
+
+.titulo_subcategoria{
+    margin-top: 80px;
+    font-size: 22px;
+    line-height: 60px;
+    text-align: center;
+    width: 800px;
+    word-spacing: 2px;
+    letter-spacing: 4px;
+    height: 60px;
+    background-color: #4F2574;
+}
+
+.table_sub{
+    width: 800px;
+    height: 700px;
+    display: table;
+    margin-bottom: 20px;
+}
+
+.nome_camp{
+    width: inherit;
+    height: 70px;
+}
+
+.camp{
+    width: 264px;
+    height: inherit;
+    float: left;
+    letter-spacing: 1.8px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 70px;
+    border-right: 1.6px solid #4f4f54;
+    border-left: 1px solid #4f4f54;
+}
+
+.dados{
+    width: 264px;
+    height: inherit;
+    float: left;
+    letter-spacing: 1.8px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 70px;  
+    border: 1px solid #4f4f54;  
+}
+
+.letra_slt{
+    font-size: 20px;
+}

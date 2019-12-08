@@ -34,5 +34,22 @@
                     $categoriasController->deletaCategoria($id);
                 break;
             }
+        break;
+
+        case 'SUBCATEGORIAS':
+            require_once('controller/subCategoriasController.php');
+            switch(strtoupper($modo)){
+                case 'NOVO':
+                    $subcategoriasController = new SubcategoriasController();
+                    $subcategoriasController->novaSubcategoria();
+                break; 
+                
+                case 'EXCLUIR':
+                    $id = $_GET['id'];
+                    $subcategoriasController = new SubcategoriasController();
+                    $subcategoriasController->deletaSubcategorias($id);
+                break; 
+            }
+        break;
     }
 ?>
