@@ -1,0 +1,214 @@
+#container_menu_sobre{
+    width: 100%;
+    height: auto;
+    background-color: #1288AC;
+}
+
+#container_menu_sobre .conteudo{
+    min-height: 700px;
+    height: auto;
+    padding-top: 40px;
+    
+}
+
+#container_menu_sobre .conteudo h1{
+    width: inherit;
+    text-align: center;
+    color: #1288AC;
+    word-spacing: 8px;
+    letter-spacing: 2px;
+}
+
+#container_menu{
+    width: 500px;
+    height: 400px;
+    margin-top: 45px;
+    padding-bottom: 35px;
+}
+
+.menu_itens{
+    width: 499px;
+    height: 142px;
+    color: #1288AC;
+    font-size: 40px;
+    line-height: 142px;
+    letter-spacing: 2px;
+    text-align: center;
+    border: 1px solid #1288AC;
+}
+
+.menu_itens:hover{
+    color: #fff;
+    background-color: #1288AC;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+#container_frm_nossahistoria{
+    width: 100%;
+    height: auto;
+    background-color: #1288AC;
+}
+
+#container_frm_nossahistoria .conteudo{
+    min-height: 1000px;
+    height: auto;
+    padding-top: 45px;
+}
+
+#container_frm_nossahistoria .conteudo h1{
+    width: inherit;
+    text-align: center;
+    color: #1288AC;
+    word-spacing: 8px;
+    letter-spacing: 2px;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+#container_frm{
+    width: 1000px;
+    height: 650px;
+    border: 1px solid #1288AC;
+}
+
+#frmimg{
+   width: 999px; 
+   height: 50px;
+}
+
+#frmnossahistoria{
+    width: 999px;
+    height: 600px;
+}
+
+#fileFoto{
+    width: inherit;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 370px;
+    font-size: 19px;
+}
+
+#texto{
+    width: 700px;
+    height: 200px;
+    margin-left: 135px;
+    margin-top: 15px;
+}
+
+#carrega_img{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #8c8c8f;
+}
+
+.img_curiosidades{
+    width: 85px;
+    height: 85px;
+    margin-top: 13px;
+}
+
+.img_editar{
+    width: inherit;
+    height: inherit;
+}
+#btnnossahistoria{
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+#botao{
+    width: inherit;
+    height: inherit;
+    background-color: #1288AC;
+    border: 1px solid #1288AC;
+    color: #fff;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+textarea{
+    resize: none;
+}
+
+.container_ver_nossahistoria{
+    width: 1000px;
+    height: 400px;
+    display: table;
+    padding-top: 35px;
+    padding-bottom: 100px;
+    background-color: aqua;
+}
+
+.campos_nossahistoria_container{
+    width: 1299px;
+    height: 45px;
+    border-left: 1px solid #8c8c8f;
+}
+
+.dados_nossahistoria_container{
+    width: 1299px;
+    height: 112px;
+    border-left: 1px solid #8c8c8f;
+}
+
+.campos_nossahistoria{
+   width: 308px;
+   height: 45px;
+   background-color: #1288AC;
+   color: #fff;
+   float: left;
+   font-size: 20px;
+   text-align: center;
+   line-height: 40px;
+   border-right: 1px solid #8c8c8f;
+}
+
+.dados_nossahistoria, .dados_nossahistoria_icons{
+    width: 308px;
+    height: 112px;   
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    border-right: 1px solid #8c8c8f;
+    border-bottom: 1px solid #8c8c8f; 
+}
+
+#container_icons{
+    width: 198px;
+    height: 90px;
+    padding-top: 20px;
+}
+
+.campos_nossahistoria_texto{
+    width: 680px;
+    height: 45px;
+    background-color: #1288AC;
+    color: #fff; 
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    border-right: 1px solid #8c8c8f;
+}
+.dados_nossahistoria_texto{
+    width: 680px;
+    height: 112px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    border-right: 1px solid #8c8c8f;
+    overflow: auto;
+    border-bottom: 1px solid #8c8c8f;
+}
+
+.icon_nossahistoria{
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-right: 6px;
+}

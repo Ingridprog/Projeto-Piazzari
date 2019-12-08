@@ -1,0 +1,90 @@
+/* Área de Título */
+.nossas_lojas_titulo{
+    width: 100%;
+    height: 100px;
+    padding-top: 100px;
+    background-color: #fc7d28;
+    
+}
+.nossas_lojas_titulo .conteudo{
+   background-color: #fc7d28;
+}
+
+.img_loja{
+    width: 100px;
+    height: 90px;
+    float: left;
+    margin-left: 542px;
+   
+}
+
+h1{
+    width: 300px;
+    height: 90px;
+    float: left;
+    color: #fff;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    font-size: 40px;
+    line-height: 90px;
+    margin-left: 15px;
+    font-variant: small-caps;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Área endereço e telefone */
+.container_endereco_telefone{
+    width: 100%;
+    height: 750px;
+    display: table;
+    background-image: url(../img/planodefundo.png);
+}
+
+.endereco_telefone{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+
+/* Endereço e Icone */
+.localizacao{
+    width: 600px;
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+/* icone de localização */
+.img_localizacao{
+    width: 60px;
+    height: 60px;
+    padding-top: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+/* Endereço */
+.txt_endereco_loja{
+    width: 520px;
+    height: 70px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+.txt_endereco_loja h2{
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;
+    color:  #757573; 
+    padding-left: 5px;
+}
+
+.txt_endereco_loja p{
+    font-size: 19px;
+    font-family: 'Roboto Mono', monospace;
+    color: #757573;
+}

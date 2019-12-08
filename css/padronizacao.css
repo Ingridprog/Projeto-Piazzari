@@ -1,0 +1,228 @@
+/* PADRONIZAÇÂO */
+*{
+   margin: 0px;
+   padding: 0px;
+}
+
+.float{
+   float: left;
+}
+
+.conteudo{
+   width: 1500px;
+   height: inherit;
+   display: table;
+   background-color: white;
+}
+
+.center{
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.background{
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #000;
+}
+
+a {
+    width: inherit;
+    height: inherit;
+    color: inherit;
+    text-decoration: none;
+}
+
+p{
+   font-family: consolas;
+   font-size: 20px;
+   margin-left: 5px;
+   letter-spacing: -2px;
+}
+.img{
+   width: inherit;
+   height: inherit;
+}
+
+/* Cabeçalho */
+header{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    z-index: 4;
+}
+
+header .conteudo{
+    background-color: #141311;
+}
+
+/* Logo */
+.container_logo{
+	width: 100px;
+	height: 90px;
+	margin-top: 5px; 
+   margin-left: 5px;
+}
+
+/* Menu */
+nav{
+   width: 800px;
+   height: 60px;
+   margin-top: 20px;
+   margin-left: 100px;
+   padding-top: 15px;
+}
+
+#menu{
+   width: inherit;
+   height: 50px;
+   margin-top: -10px;
+}
+
+.menu_itens{
+   height: inherit ;
+   text-align: center;
+   min-width: 80px;
+   list-style: none;
+   margin-left: 20px;
+   font-family: 'Roboto Mono', monospace;
+   font-variant: small-caps;
+   line-height: 50px;
+   letter-spacing: -1px;
+   color: #FF750C;
+   
+}
+
+.menu_itens:hover{
+   cursor: pointer;
+   color: #F2AD5E;
+}
+
+/* Login */
+.login_frm{
+   height: 60px;
+   margin-top: 20px;
+   width: 380px;
+   margin-left: 70px;
+}
+
+.login{
+   width: 140px;
+   margin-left: 20px;
+   height: inherit;
+   font-family: 'Roboto Mono', monospace;
+   font-size: 16px;
+   color: white;
+}
+
+.login input{
+   width: 120px;
+   height: 22px;
+   margin-top: 4px;
+   border: solid 1px #FF750C;
+}
+
+#botao_login{
+   height: 30px;
+   margin-top: 25px;
+   width: 40px;
+   margin-left: 5px;
+   border: solid 1px #FF750C;
+   font-size: 15px;
+   color: #FF750C;
+   background-color: black;
+}
+
+#botao_login:hover{
+   cursor: pointer;
+   border: solid 2px #FF750C;
+   transition: 0.2;
+}
+
+/* Rodapé */
+
+.footer{
+   width: 100%;
+   height: 150px;
+   display: table;
+   background-color: #070707; 
+}
+
+.footer .conteudo{
+   background-color: #0f0d0c;
+}
+
+.sistema_interno, .baixe_app {
+   width: 190px;
+   min-height: 60px;
+   height: auto;
+   background-color: #D84F00;
+   float: left;
+   margin-top: 41px;
+   margin-left: 30PX;
+   text-align: center;
+   font-size: 20px;
+   padding-top: 15px;
+   box-sizing: border-box;
+   color: white;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 1px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   border: solid 2px white;
+  
+}
+
+.sistema_interno{
+   margin-right: 245px;
+}
+
+.baixe_app{
+   margin-left: 10px;
+   
+}
+
+.sistema_interno:hover, .baixe_app:hover{
+   cursor: pointer;
+   width: 200px;
+   height: 70px;
+   margin-top: 35px;
+   font-size: 23px;
+}
+
+.sistema_interno:hover{
+   margin-right: 235px;
+}
+
+.endereco{
+   width: 600px;
+   height: 30px;
+   float: left;
+   text-align: center;
+   font-size: 20px;
+   margin-top: 80px;
+   color: white;
+   letter-spacing: -1px;
+
+}
+
+#logo_footer{
+   width: 130px;
+   height: 120px;;
+   float: left;
+   margin-top: 15px;
+   margin-left: 50px;
+
+}
+
+.img_footer{
+   width: inherit;
+   height: inherit;
+}
+
+/*********************************/
+
+

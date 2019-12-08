@@ -1,0 +1,122 @@
+/* PADRONIZAÇÃO */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    width: 100%;
+    height: 90px;
+    background-color: #000;
+}
+
+.conteudo{
+   width: 1500px;
+   height: inherit;
+   display: table;
+   background-color: #000;    
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sistemaMVC{
+    height: 50px;
+    width: inherit;
+    text-align: center;
+    font-family: 'Tomorrow', sans-serif;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    color: #fff;
+}
+
+/**********************************/
+.letras{
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 2px;
+}
+
+.container_login{
+    width: 100%;
+    height: 900px;
+    background-image: linear-gradient(#302865, #0C8593);  
+}
+
+.container_login .conteudo{
+    background-image: linear-gradient(#302865, #0C8593);
+}
+
+form{
+    width: 490px;
+    height: 300px;
+    border-top: 1px solid #fff;
+    margin-top: 150px;
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
+.container_frm{
+    width: 390px;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.login_input{
+    width: 260px;
+    height: 30px;
+    margin-top: 20px;
+    float: left;
+}
+
+.login_input_campo{
+    width: inherit;
+    height: inherit;
+    margin-left: 10px;
+    
+}
+
+.icone_login{
+    float: left;
+    height: 35px;
+    width: 35px;
+    margin-top: 20px;
+    margin-left: 27px;
+}
+
+#btnlogin{
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: aqua;
+}
+
+#btn{
+    width: inherit;
+    height: inherit;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #FF5287;
+    border: 1px solid #FF5287;
+    cursor: pointer;
+}
+
+.img{
+    width: inherit;
+    height: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+

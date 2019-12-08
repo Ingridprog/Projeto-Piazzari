@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    width: 100%;
+    height: 105px;
+    background-color: #000;
+}
+
+.conteudo{
+   width: 1500px;
+   height: inherit;
+   display: table;
+   background-color: #000;    
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sistemaMVC{
+    height: 50px;
+    width: inherit;
+    text-align: center;
+    font-family: 'Tomorrow', sans-serif;
+    letter-spacing: 3px;
+    padding-top: 25px;
+    color: #fff;
+}
+
+footer{
+    width: 100%;
+    height: 75px;
+    background-color: #000;    
+}
+.rodape{
+    height: 50px;
+    width: inherit;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #fff;
+    font-variant: small-caps;
+    padding-top: 10px;
+}
+
+/**********************************/
+.letras{
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 2px;
+}
+
+.titulo{
+    font-family: 'Tomorrow', sans-serif;
+}
+
+.letra_white{
+    color: #fff;
+}
+
+.texto_center{
+    text-align: center;
+}
+
+.titulo_principal{
+    margin-top: 50px;
+    width: inherit;
+    height: 40px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #4f4f54;
+}

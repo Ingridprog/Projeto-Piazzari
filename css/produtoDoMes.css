@@ -1,0 +1,130 @@
+/* Área do título */
+#produto_destaque_titulo{
+   width: 100%;
+   height: 100px;
+   padding-top: 100px;
+   background-color: #880F18;
+}
+
+#produto_destaque_titulo h1{
+   width: 999px;
+   height: 90px; 
+   margin-top: 4px;
+   border: solid 1px #fff;
+   letter-spacing: 1px;
+   text-align: center;
+   font-size: 50px;
+   color: #fff;
+   line-height: 90px;
+   font-variant: small-caps;
+   font-family: 'Roboto Mono', monospace;
+}
+ 
+/* Área do conteúdo principal */
+
+.produto_destaque{
+   width: 100%;
+   height: 600px;
+   background-image: url(../img/planodefundo.png);
+}
+
+/* Sobre o produto destaque */
+.detalhes_produto_destaque{
+   width: 750px;
+   height: 550px;
+   float: left;
+}
+
+/* Título */
+.detalhes_produto_destaque h2{
+   width: 500px;
+   height: 50px;
+   font-variant: small-caps;
+   font-family: 'Roboto Mono', monospace;
+   color: #ff0000;;
+   font-size: 30px;
+   text-align: center;
+   margin-top: 15px;
+   line-height: 50px;
+}
+
+/* Introdução do produto */
+.sobre_produto_destaque p{
+   width: 620px;
+   height: 70px;
+   margin-left: 70px;
+   font-family: 'Roboto Mono', monospace;
+   font-weight: bold;
+   font-size: 20px;
+   padding: 10px;
+   text-align: right;
+   color: #403434;
+}
+
+/* Detalhes do produto*/
+#ingredientes_produto_destaque{
+   width: 620px;
+   height: 100px;
+   border: solid 1px #f29b49;
+   margin-top: 50px;
+   font-variant:normal;
+   text-align: center;
+   font-weight: lighter;
+   
+}
+
+/* Preço */
+.preco_container{
+   width: inherit;
+   height: 200px;
+}
+
+.preco_container h3{
+   font-family: 'Roboto Mono', monospace;
+   margin-top: 20px;
+   font-size: 25px;
+   margin-left: 50px;
+   float: left;
+   
+}
+
+.preco{
+   width: 200px;
+   height: 200px;
+   border-radius: 100%;
+   background-color: #880F18;
+   float: left; 
+   margin-left: 60px;
+   margin-top: 25px;
+}
+
+.preco span{
+   color: #fff;
+   line-height: 200px;
+   margin-left: 15px;
+   font-size: 35px;
+   font-weight: bold;
+   font-variant: small-caps;
+   font-family: 'Roboto Mono', monospace;
+}
+
+/* Foto produto destaque */
+.img_produto_destaque{
+   width: 750px;
+   height: 550px;
+   float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

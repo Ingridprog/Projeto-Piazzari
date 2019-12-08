@@ -1,0 +1,265 @@
+/* CONTEÚDO DA HOME */
+#conteudo_principal{
+   height: 500px;
+   display: table; 
+   width: 100%;
+   background-color: #070707;
+}
+
+/* SLIDER */
+
+#slider_container{
+    width: 100%;
+    background-image: url(../img/planodefundo.png);
+    height: 550px;
+   padding-top: 100px;
+}
+a,img {
+    border: none;
+}  
+#slider {
+    position: relative;
+    z-index: 1;
+}
+#slider a { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    opacity: 0;
+    filter:alpha(opacity=0);
+    height: 550px;
+    width: 1500px;
+}
+#slider a img{
+    height: 600px;
+    width: inherit;
+}
+.ativo {
+    opacity: 1!important; 
+    filter:alpha(opacity=100)!important;
+}
+figure:hover span {
+    opacity: 0.76;
+    filter:alpha(opacity=76);
+}
+figure {
+    width: 1500px;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* CONTROLADORES DO SLIDER */
+span {
+    cursor: pointer; 
+    opacity: 0;
+    filter:alpha(opacity=0);
+    position: absolute;
+    bottom: 40%; 
+    width: 43px;
+    height: 43px; 
+    z-index: 7;
+
+}
+.next{
+    right: 10px;
+    background-image: url(../img/icon_next.png);
+   background-size: cover;
+}
+
+.next:before,.next:after {
+    left: 21px;
+}
+.next:before {
+    -webkit-transform: rotate(-42deg);
+    top: 5px;
+}
+.next:after {
+    -webkit-transform: rotate(-132deg);
+    top: 19px;
+}
+.next:before,.next:after,.prev:before,.prev:after {
+    height: 20px;
+    background: #fff;
+    width: 1px;
+    position: absolute;
+}
+.prev {
+    left: 10px;
+    background-image: url(../img/icon_prev.png);
+    background-size: cover;
+}
+.prev:before,.prev:after {
+    left: 18px;
+}
+.prev:before {
+    -webkit-transform: rotate(42deg);
+    top: 5px;
+}
+.prev:after {
+    -webkit-transform: rotate(132deg);
+    top: 19px;
+}
+.transicao{
+    -webkit-transition:all ease-out 0.5s;
+    -moz-transition:all ease-out 0.5s;
+    -o-transition:all ease-out 0.5s;
+    -ms-transition:all ease-out 0.5s;
+    transition:all ease-out 0.5s;
+}
+
+/* LEGENDA DO SLIDER */
+figcaption {
+    padding-left: 20px;
+    color: #fff; 
+    font-family: "Century Gothic","Lato","arial"; 
+    font-size: 22px; 
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    line-height: 55px; 
+    height: 55px; 
+    z-index: 3;
+}
+
+/* REDES SOCIAIS */
+#redes_sociais{
+   height: 288px;
+   width: 93px;
+   margin-left: 1510px;
+   position: fixed; 
+   margin-top: 0px;
+}
+.redes_itens{
+   height: 70px;
+   width: 70px;
+   background-color: azure;
+   border: solid 2px #FFB90A; 
+   margin-bottom: 4px;
+}
+.redes_itens:hover{
+   cursor: pointer;
+}
+
+/* MENU VERTICAL */
+#menu_vertical{
+    width: 195px;
+    height:inherit;
+    float: left;
+    margin-left: 15px;
+}
+#menu_vertical ul{
+    width: inherit;
+    height:inherit; 
+}
+.menu_itens_vertical{
+    width: inherit;
+    height: 50px;
+    list-style: none;
+    font-size: 19px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    line-height: 50px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color:#e8de1a;
+    background-color: black;
+    letter-spacing: -1px;
+    text-transform: uppercase; 
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.menu_itens_vertical:hover{
+   background-color: #852517;
+   cursor: pointer;
+   font-size: 20px;
+   transition: 0.5s;
+}
+
+/* PRODUTOS */
+.todos_produtos{
+   width: 1200px;
+   padding-top: 100px;
+   min-height: 500px;
+   float: left;
+   margin-left: 15px;
+   padding-bottom: 50px;
+   box-sizing: border-box;
+}
+
+.produtos_home_caixa{
+    width: inherit;
+    height: 460px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.produtos_home{
+   width: 328px;
+   height: 430px;
+   background-color: #fff;
+   margin-left: 50px;
+   float: left;
+   border-top: solid 5px #8a210e;
+   box-shadow: 8px 6px 10px 10px #EEDFCD;
+}
+
+.img_produtos_home{
+   width: 180px;
+   height: 180px;
+   background-color: aliceblue;
+   margin-bottom: 15px;
+   margin-top: 5px;
+}
+
+.detalhes_produtos{
+    width: 300px;
+    height: 210px;
+}
+
+.detalhes_produtos p{
+   font-family: consolas;
+   letter-spacing: 1px;
+   font-size: 22px;
+   padding-top: 15px;
+   box-sizing: border-box;
+   margin-bottom: 20px;
+}
+
+.maisDetalhes{
+   width: 120px;
+   height: 40px;
+   line-height: 40px;
+   background-color: #8a210e;
+   color: white;
+   text-align: center;
+   letter-spacing: -1px;
+   border-radius: 5px;
+   font-size: 18px;
+   margin-left: 150px;
+}
+
+.maisDetalhes:hover{
+   cursor: pointer;
+   font-size: 20px;
+   transition: 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

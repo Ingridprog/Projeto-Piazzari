@@ -1,0 +1,216 @@
+/* PADRONIZAÇÃO */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.conteudo{
+    width: 1500px;
+    height: inherit;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+a{
+   text-decoration: none;
+}
+
+.letra_fonte{
+    font-family: 'Amatic SC', cursive;
+}
+
+.texto_fonte{
+    font-family: 'Playfair Display', serif;
+}
+
+/* Cores */
+.cor_azul_escuro{
+    background-color: #172333; 
+}
+
+.cor_azul_claro{
+    background-color: #2C576F;
+}
+
+/****************************************************/
+
+/* CABEÇALHO */
+header{
+    width: 100%;
+    height: 230px;
+    font-variant: small-caps;
+    background-color: #000;  
+}
+
+header .conteudo{
+    background-color: #000;
+}
+
+/* Título */
+header .conteudo h1{
+    width: 600px;
+    height: 80px;
+    margin-left: 40px;
+    font-size: 45px;
+    line-height: 80px;
+    padding-top: 80px;
+    color: #fff;
+    float: left;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+}
+
+/* Imagem */
+header .conteudo img{
+    width: 300px;
+    height: 200px;
+    float: right;
+    margin-right: 25px;
+    border-radius: 10px;
+}
+
+/*******************************************************/
+
+/* ÁREA DE ADMINISTRAÇÃO */
+
+#adm_container{
+    width: 100%;
+    height: 250px;
+    background-color: #1288AC;
+}
+
+#adm_container .conteudo{
+    background-color: #090c0f;
+}
+/* Tipos de Administração */
+
+.tipo_de_adm{
+    width: 200px;
+    height: 220px;
+    margin-top: 15px;
+    float: left;
+    margin-left: 55px;
+}
+
+/* imagem */
+.tipo_de_adm img{
+    width: 150px;
+    height: 140px;
+    margin-left: 25px;
+}
+
+/* txt adm */
+.tipo_de_adm p, .adm_usuarios p{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    margin-top: 15px;
+    color: #a0a0a3;
+}
+
+#boas_vindas{
+   width: 600px;
+   height: 220px;
+   margin-top: 15px;
+   float: right;
+   margin-right: 25px;
+}
+
+#boas_vindas p{
+   font-family: 'Playfair Display', serif;
+   font-size: 24px;
+   color: #dfe2e6;
+   letter-spacing: 2px;
+  
+}
+
+#logout{
+   width: 130px;
+   height: 50px;
+   margin-top: 120px;
+   margin-left: 400px;
+   border: 1px solid #a0a0a3;
+}
+
+#logout a p{
+   line-height: 50px;
+   text-align: center;
+   letter-spacing: 3px;
+   color: #fff;
+}
+#logout a p:hover{
+   background-color: #fff;
+   color: #000;
+   font-weight: bold;
+}
+/************************************/
+/* CONTEUDO A SER ADMINISTRADO */
+
+/* Container do conteudo */
+
+#conteudo_para_adm .conteudo{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+}
+
+#conteudo_para_adm{
+    width: 100%;
+    height: 800px;
+    background-color: #1288AC;
+}
+
+.conteudo_adm_container{
+   margin-top: 25px;
+   margin-left: 25px;
+   width: 450px;
+   height: 150px;
+}
+
+.conteudo_adm_container img{
+   width: 150px;
+   height: 150px;
+   float: left;
+}
+
+.conteudo_adm_container p{
+   float: left;
+   font-size: 25px;
+   font-family: 'Playfair Display', serif;
+   font-variant: small-caps;
+   margin-top: 50px;
+   margin-left: 10px;
+   color: #000;
+}
+
+
+/***************************************/
+
+/* RODAPÉ */
+
+footer{
+    width: 100%;
+    height: 90px;
+    background-color: #000; 
+}
+
+footer .conteudo{
+   background-color: inherit;
+}
+
+footer .conteudo h2{
+   width: 600px;
+   height: 90px;
+   font-size: 30px;
+   letter-spacing: 2px;
+   word-spacing: 5px;
+   line-height: 90px;
+   text-align: center;
+   color: #fff;
+   background-color: #000;
+    
+}

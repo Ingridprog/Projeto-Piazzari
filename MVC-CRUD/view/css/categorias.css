@@ -1,0 +1,118 @@
+.container_frm{
+    width: 100%;
+    height: 1000px;
+    display: table;
+    background-color: #324F91;
+}
+
+.container_frm .conteudo{
+    background-color: #fff;
+}
+
+.titulo_categoria{
+    margin-top: 80px;
+    font-size: 22px;
+    line-height: 60px;
+    text-align: center;
+    width: 700px;
+    word-spacing: 2px;
+    letter-spacing: 4px;
+    height: 60px;
+    background-color: #4F2574;
+}
+
+#frm_cat{
+    width: 698px;
+    height: 180px;
+    border: 1px solid #4f4f54;
+}
+
+.inputs{
+    width: 480px;
+    margin-top: 15px;
+    height: 50px;
+}
+
+#nome{
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    float: left;
+}
+
+.nome_input{
+    width: 390px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.btn{
+    width: 120px;
+    height: 42px;
+    margin-top: 35px;
+    
+}
+
+.btnSave{
+    width: inherit;
+    height: inherit;
+    border: 1px #4F2574 solid;
+    background-color: #fff;
+    color: #4F2574;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btnSave:hover{
+    border: 1px #fff solid;  
+    color: #fff;
+    background-color: #4F2574; 
+}
+/************************/
+.table{
+    width: 698px;
+    height: 400px;
+    display: table;
+}
+
+.container_table_nome{
+    width: 697px;
+    height: 55px;
+    border-left: 1px solid #4f4f54;
+}
+
+.table_nome{
+   width: 347px;
+   height: 55px;
+   float: left;
+   font-size: 24px;
+   font-weight: bold;
+   text-align: center;
+   line-height: 55px;
+   border-right: 1.2px solid #4f4f54;
+   border-bottom: 1.2px solid #4f4f54;
+}
+
+.table_nome_campos{
+   width: 347px;
+   height: 55px;  
+   float: left;
+   font-size: 22px;
+   text-align: center;
+   line-height: 55px; 
+   border-right: 1px solid #4f4f54;
+   border-bottom: 1px solid #4f4f54;
+   border-right: 1.2px solid #4f4f54;
+}
+
+.img{
+    width: 45px;
+    height: 45px;
+    margin-top: 3px;
+}
+
+a{
+    text-decoration: none;
+}

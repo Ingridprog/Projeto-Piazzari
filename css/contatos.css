@@ -1,0 +1,110 @@
+.contatos{
+   width: 100%;
+   height: 900px;
+   background-image: url(../img/planodefundo.png);
+   padding-top: 100px;
+}
+
+.contatos .conteudo{
+   background-image: url(../img/planodefundocontatos.png);
+   background-size: cover;      
+}
+
+/* Título */
+.titulo{
+   width: 400px;
+   height: 80px;
+   line-height: 80px;
+   background-color: #880F18;
+   margin-top: 15px;
+   font-size: 50px;
+   text-align: center;
+   font-variant: small-caps;
+   font-family: 'Roboto Mono', monospace;
+   color: #fff;
+}
+
+/* Formulário */
+.frm_contatos{
+   width: 550px;
+   height: 750px;
+   background-color: rgba(79, 71, 71, 0.80);
+   color: #fff;
+}
+
+.orientacao{
+   width: inherit;
+   height: 50px;
+   text-align: center;
+   font-variant: small-caps;
+   font-family: 'Roboto Mono', monospace;
+   font-size: 20px;
+   padding-top: 10px;
+}
+
+#table_contatos{
+   width: 470px;
+   height: 650px;
+   
+}
+
+#table_contatos tr{
+   height: 50px;
+   width: inherit;
+}
+
+/* Nome do input */
+.txt_input{
+   width: 120px;
+   height: 50px;
+}
+
+.txt_input p{
+   text-align: justify;
+   text-transform: capitalize;
+   font-family: 'Roboto Mono', monospace;
+   font-size: 20px;
+   line-height: 50px;
+}
+
+/* Campo do input */
+.campo_input{
+   width: 340px;
+   height: 50px;
+   padding-left: 10px;
+}
+
+.campo_input .input{
+   width: 330px;
+   height: 25px;
+   margin-top: 4px;
+}
+
+
+.msg{
+   margin-left: 120px;
+   width: 340px;
+   height: 150px;
+}
+
+#botaoSalvar{
+   width: 90px;
+   height: 35px;
+   font-family: 'Roboto Mono', monospace;
+   font-variant: small-caps;
+   letter-spacing: 1px;
+   font-size: 20px;
+   margin-left: 190px;
+   background-color: #880F18;
+   color: #fff;
+   border: solid 1px #fff;
+}
+
+#botaoSalvar:hover{
+   cursor: pointer;
+}
+
+
+
+
+

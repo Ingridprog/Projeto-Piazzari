@@ -1,0 +1,140 @@
+#promocoes{
+    width: 100%;
+    min-height: 650px;
+    padding-top: 100px;
+    background-image: url(../img/planodefundo.png);
+}
+.faixa_produtos{
+    width: 100%;
+    height: 550px;
+}
+
+h2{
+    width: 296px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #880F18;
+    font-weight: bold;
+    font-size: 35px;
+    border: 2px solid #880F18; 
+    margin-bottom: 35px;
+    font-variant: small-caps;
+    font-family: 'Roboto Mono', monospace;
+}
+.produto {
+   width: 330px;
+   height: 430px;
+   margin-left: 85px;  
+   margin-right: 85px;
+   border-top: solid 5px #8a210e;
+   box-shadow: 8px 6px 0px 10px #EEDFCD;    
+}
+/* Imagem do produto em promoção */
+.img_produto{
+   width: 150px;
+   height: 150px;
+   margin-top: 8px;
+   background-color: aqua;
+   
+}
+
+/* Descrição */
+.descricao{
+   width: inherit;
+   height: 90px;
+   margin-top: 10px;
+}
+
+.descricao h3{
+   font-family: 'Roboto Mono', monospace;
+   font-size: 25px;
+   text-align: center;
+   color: #545150;
+}
+
+.descricao p{
+   font-family: 'Roboto Mono', monospace;
+   font-family: 20px;
+/*   text-align: center;*/
+   color: #545150;
+   padding-left: 5px;
+}
+
+/* Preço */
+.preco{
+   width: 188px;
+   height: 120px;
+   margin-top: 15px;
+   background-color: aqua;
+   background-color: #8a210e;
+   border-radius: 6px;
+}
+
+.preco h4, h3{
+   text-align: center;
+   padding-top: 5px;
+   color: #fff;
+   font-size: 25px;
+}
+
+.preco h4{
+   text-decoration: line-through;
+}
+
+.preco h3{
+   font-size: 42px;
+}
+
+/* topo da page */
+#faixa_titulo{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/promocoes.png);
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 175px;
+}
+#color_brown{
+    width: 500px;
+    height: 100px;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    line-height: 100px;
+    background-color: #290c04;
+    font-variant: small-caps;
+    font-family: 'Roboto Mono', monospace;
+}
+/* Menu das promoções */
+#menu_promocoes{
+    width: 100%;
+    height: 150px;
+}
+#menu_promocoes ul{
+    width: 600px;
+    height: 80px;
+    list-style: none;
+    padding-top: 30px;
+}
+.promocoes_menu_itens{
+    width: 198px;
+    height: inherit;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    background-color: #FF750C;
+    font-variant: small-caps;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 23px;
+    font-size: 25px;
+}
+.promocoes_menu_itens:hover{
+   background-color: #290c04; 
+}

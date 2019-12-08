@@ -1,0 +1,165 @@
+.container_curiosides{
+    width: 100%;
+    height: auto;
+    background-color: #1288AC;
+}
+.container_curiosides .conteudo{
+    height: auto;
+    padding-top: 45px;
+}
+
+.container_curiosides .conteudo h1{
+    width: inherit;
+    text-align: center;
+    color: #1288AC;
+    word-spacing: 8px;
+    letter-spacing: 2px;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+#container_frm{
+    width: 1000px;
+    height: 650px;
+    border: 1px solid #1288AC;
+}
+
+#frmimg{
+   width: 999px; 
+   height: 50px;
+}
+
+#fileFoto{
+    width: inherit;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 370px;
+    font-size: 19px;
+}
+#frmcuriosidades{
+    width: 999px;
+    height: 600px;
+}
+
+#texto{
+    width: 700px;
+    height: 200px;
+    margin-left: 135px;
+    margin-top: 15px;
+}
+
+#carrega_img{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #8c8c8f;
+    background-color: #8c8c8f;
+}
+
+.img_curiosidades{
+    width: 85px;
+    height: 85px;
+    margin-top: 13px;
+}
+textarea{
+    resize: none;
+}
+
+.img_editar{
+    width: inherit;
+    height: inherit;
+}
+#btncuriosidade{
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+#botao{
+    width: inherit;
+    height: inherit;
+    background-color: #1288AC;
+    border: 1px solid #1288AC;
+    color: #fff;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.container_ver_curiosidades{
+    width: 1000px;
+    height: 400px;
+    display: table;
+    padding-top: 35px;
+    padding-bottom: 100px;
+    background-color: aqua;
+}
+
+.campos_curiosidades_container{
+    width: 1299px;
+    height: 45px;
+    border-left: 1px solid #8c8c8f;
+}
+
+.dados_curiosidades_container{
+    width: 1299px;
+    height: 112px;
+    border-left: 1px solid #8c8c8f;
+}
+
+.campos_curiosidades{
+   width: 308px;
+   height: 45px;
+   background-color: #1288AC;
+   color: #fff;
+   float: left;
+   font-size: 20px;
+   text-align: center;
+   line-height: 40px;
+   border-right: 1px solid #8c8c8f;
+}
+
+.dados_curiosidades, .dados_curiosidades_icons{
+    width: 308px;
+    height: 112px;   
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    border-right: 1px solid #8c8c8f;
+    border-bottom: 1px solid #8c8c8f; 
+}
+
+#container_icons{
+    width: 198px;
+    height: 90px;
+    padding-top: 20px;
+}
+
+.campos_curiosidades_texto{
+    width: 680px;
+    height: 45px;
+    background-color: #1288AC;
+    color: #fff; 
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    border-right: 1px solid #8c8c8f;
+}
+.dados_curiosidades_texto{
+    width: 680px;
+    height: 112px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    border-right: 1px solid #8c8c8f;
+    overflow: auto;
+    border-bottom: 1px solid #8c8c8f;
+}
+
+.icon_curiosidade{
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-right: 6px;
+}

@@ -1,0 +1,286 @@
+#container_formulario_img, #container_frmLojas{
+   width: 100%;
+   height: auto;
+   background-color: #1288AC;
+}
+
+#container_formulario_img .conteudo{
+   padding-top: 30px;
+   height: auto;
+}
+
+#container_formulario_img .conteudo h1{
+   width: inherit;
+   text-align: center;
+   height: 35px;
+   margin-bottom: 45px;
+   word-spacing: 8px;
+   letter-spacing: 3px;
+   color: #1288AC;
+}
+
+#container_formulario_img .conteudo h2{
+   width: 500px;
+   height: 50px;
+   text-align: center;
+   background-color: #1288AC;
+   color: #fff;
+   font-size: 32px;
+   word-spacing: 1px;
+   border: 1px solid #1288AC;
+   letter-spacing: 1.5px;
+}
+.container_formularios{
+   width: 500px;
+   height: 400px;
+   border: 1px solid #bebdbf;
+}
+
+#formFoto{
+   width: 499px;
+   height: 300px;
+}
+
+.txt_input{
+   width: 499px;
+   height: 35px;
+   text-align: center;
+   font-size: 22px;
+   letter-spacing: 5px;
+   color: #2C576F;
+   font-weight: bold;
+}
+
+.caixa_input{
+   width: 500px;
+   height: 50px;
+}
+
+.caixa_campos{
+   height: 25px;
+   width: 150px;
+   font-size: 18px;
+   margin-left: 175px;
+   margin-top: 10px;
+}
+
+#carrega_img{
+   width: 200px;
+   height: 200px;
+   margin-top: 10px;
+   background-image: url(../img/b.jpg);
+   background-size: contain;
+}
+.img_editar{
+   width: inherit;
+   height: inherit;
+}
+
+#btnimg{
+   width: 100px;
+   height: 40px;
+   margin-top: 25px;
+}
+
+#btnimglojas{
+   width: inherit;
+   height: inherit;
+   font-size: 22px;
+   color: #fff;
+   cursor: pointer;
+   border: 1px solid #fff;
+   background-color: #1288AC;
+   letter-spacing: 1.5px;
+}
+
+#container_icones_lojas{
+   width: 799px;
+   height: 420px;
+   display: table;
+   margin-top: 35px;  
+}
+
+.container_campos_icones{
+   width: 799px;
+   height: 40px;
+}
+
+.campos_icones_lojas{
+   width: 265px;
+   height: inherit;
+   float: left;
+   background-color: #1288AC;
+   color: #fff;
+   text-align: center;
+   font-size: 20px;
+   border-right: #8c8c8f 1.3px solid;
+   line-height: 40px;
+   letter-spacing: 2px;
+   font-weight: bold;
+
+}
+
+.container_campos_icones_cadastrados{
+   width: 799px;
+   height: 90px;
+   border-left: 1px solid #8c8c8f;
+   border-bottom: 1px solid #8c8c8f;      
+}
+
+.icones_cadastrados{
+   width: 265px;
+   height: inherit;
+   float: left;
+   text-align: center;
+   font-size: 25px;  
+   line-height: 90px;
+   border-right: #8c8c8f 1px solid; 
+}
+
+.float-left{
+   float: left;
+}
+
+.container_acoes{
+   width: 70px;
+   padding-left: 15px;
+}
+
+.tamanho-acoes{
+   width: 50px;
+   height: 50px;
+   margin-top: 15px;
+}
+
+.img_icone{
+   width: 70px;
+   height: 70px;
+   margin-top: 10px;
+}
+
+/* Formulario cadastro de lojas */
+.titulo_lojas{
+   padding-top: 85px;
+   text-align: center;
+   width: inherit;
+   height: 50px;
+   color: #1288AC;
+}
+
+#frmLojas{
+   width: 1000px;
+   height: 250px;
+   padding-top: 45px;
+   margin-bottom: 35px;
+   border-top: 2px solid #1288AC;
+   border-radius: 10px;
+   border-right: 1px solid #8c8c8f;
+   border-left: 1px solid #8c8c8f;
+   border-bottom: 1px solid #8c8c8f;
+}
+
+.input_maior{
+   width: 900px;
+   height: 40px;
+   margin-bottom: 20px;
+}
+
+.input_campo_nome{
+   width: 120px;
+   height: inherit;
+   font-size: 22px;
+   line-height: 40px;
+   letter-spacing: 1px;
+   float: left;
+}
+
+.input_campo_maior{
+   width: 500px;
+   height: inherit;
+   float: left;
+}
+
+.input_campo{
+   height: 25px;
+   margin-top: 7px;
+   font-size: 20px;
+   margin-left: 10px;
+}
+
+.input_media{
+   width: 270px;
+   height: inherit;
+   float: left;
+}
+
+.input_media_campo{
+   width: 200px;
+   height: 25px;
+   margin-top: 7px;
+   font-size: 20px;
+   margin-left: 10px;
+}
+
+#botaoLojas{
+   width: 120px;
+   height: 40px;
+}
+
+#botaoLojas_input{
+   width: inherit;
+   height: inherit;
+   cursor: pointer;
+   font-size: 23px;
+   border: solid 1px #1288AC;
+   background-color: #1288AC;
+   color: #fff;
+}
+
+.table{
+   width: 1300px;
+   height: 400px;
+   display: table;
+   padding-bottom: 100px;
+   background-color: aqua;
+
+}
+
+.container_nome_campos, .container_dados_campos{
+   width: 1299px;
+   height: 45px;
+   border-left: 1px solid #8c8c8f;
+}
+
+.nome_campos{
+   width: 215px;
+   height: 45px;
+   background-color: #1288AC;
+   color: #fff;
+   float: left;
+   font-size: 20px;
+   text-align: center;
+   line-height: 40px;
+   border-right: 1px solid #8c8c8f;
+}
+
+.dados_campos{
+   width: 215px;
+   height: 45px;  
+   float: left;
+   font-size: 20px;
+   text-align: center;
+   line-height: 40px; 
+   border-right: 1px solid #8c8c8f;
+   border-bottom: 1px solid #8c8c8f;
+   border-right: 1px solid #8c8c8f;
+}
+
+.input_overflow{
+   overflow: auto;
+}
+
+.img_icon_lojas{
+   width: 42px;
+   height: 42px;
+   margin-right: 4px;
+}

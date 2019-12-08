@@ -1,0 +1,262 @@
+a{
+    text-decoration: none;
+}
+
+/* Container Gerenciar níveis e cadastrar niveis */
+#container_gerenciar_niveis, #container_cadastrar_niveis{
+    width: 100%;
+    min-height: 600px;
+    height: auto;
+    background-color: #1288AC;
+}
+
+/* Conteúdo */
+.conteudo_gerenciar_niveis{
+    background-color: #fff;
+    width: 1500px;
+    min-height: 500px;
+    height: auto;
+    padding-top: 25px;
+}
+
+
+#container_menu_titulo{
+    width: inherit;
+    height: 90px;
+}
+
+/* título Cadastrar */
+#titulo_cadastrar_nivel{
+    color: #2C576F;
+    width: 500px;
+    text-align: center;
+    padding-top: 25px;
+    letter-spacing: 2.5px;
+    word-spacing: 1.5px;
+    margin-left: 200px;
+    float: left;
+}
+
+/* Menu */
+#redirecina_gerenciar_niveis{
+    width: 420px;
+    float: right;
+    height: 60px;
+    margin-right: 200px;
+    border: solid 1px #1288AC;
+    
+}
+
+#redirecina_gerenciar_niveis a{
+    letter-spacing: 2px;
+    font-family: 'Playfair Display', serif;
+    color: #1288AC;
+    font-weight: bold;
+    font-size: 28px; 
+    text-align: center;
+}
+
+#redirecina_gerenciar_niveis a p{
+   line-height: 60px;
+}
+
+/* Container formulário Cadastrar */
+#container_frmcadastrarnivel{
+    margin-top: 20px;
+    width: 1000px;
+    height: 500px;
+    border: 1px solid #838587;
+}
+
+/* Ícone de Hierarquia de níveis */
+#icone_gerenciar_niveis{
+    float: left;
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+.img{
+    width: inherit;
+    height: inherit;
+}
+
+/* Formulário */
+#frm_cadastrar_nivel{
+    width: 500px;
+    height: 500px;
+    float: right;
+}
+
+#campo_cadastrar_nome{
+    width: 350px;
+    height: 50px;
+    margin-left: 73px;
+    margin-top: 25px;
+}
+
+#campo_cadastrar_nome p{
+    width: 90px;
+    font-family: 'Playfair Display', serif;
+    height: 50px;
+    font-size: 21px;
+    float: left;
+    line-height: 50px;
+}
+
+#campo_cadastrar_nome_container{
+    width: 240px;
+    height: 25px;
+    margin-top: 12px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Permissões */
+#permissoes{
+    width: 500px;
+    height: 40px;
+    text-align: center;
+    margin-top: 35px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    font-size: 25px;
+    color: #0E90A5;
+    font-variant: small-caps;
+}
+
+#container_permissoes{
+    width: 350px;
+    height: 200px;
+}
+
+.chk_permissoes{
+    width: inherit;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.chk_permissoes p{
+    width: 315px;
+    height: inherit;
+    float: left;
+    margin-left: 5px;
+    font-size: 20px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif;
+}
+
+.chk_container{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: 12px;
+}
+
+/* botão */
+#btn_cadastrar_nivel{
+    margin-top: 35px;
+    width: 120px;
+    height: 45px;
+}
+
+#btn_nivel{
+    width: inherit;
+    height: inherit;
+    border: solid 2px #0E90A5;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    color: #0E90A5;
+    background-color: #fff;
+}
+
+#btn_nivel:hover{
+    cursor: pointer;
+    background-color: #0E90A5;
+    color: #fff;
+    transition: 0.2s;
+}
+
+/***************************************/
+/* Título */
+#titulo_gerenciar_nivel{
+    padding-top: 100px;
+    color: #2C576F;
+    text-align: center;
+    letter-spacing: 2.5px;
+    word-spacing: 1.5px;
+}
+
+/* Tabela */
+#tabela_gerenciar_nivel{
+    width: 1350px;
+    height: 700px;
+    display: table;
+    margin-top: 35px;
+    padding-bottom: 25px;
+}
+
+#container_nome_campos_gerenciar_nivel{
+   width: 1348px;
+   height: 50px;
+   border: solid 1px #9e9c96;
+   background-color: #0E90A5;
+}
+
+.nome_campos_gerenciar_niveis_des,.dados_gerenciar_niveis_des{
+   width: 365px;
+}
+
+.nome_campos_gerenciar_niveis, .dados_gerenciar_niveis{
+   width: 194px;
+}
+
+.nome_campos_gerenciar_niveis_des,
+.nome_campos_gerenciar_niveis, .dados_gerenciar_niveis_des,
+.dados_gerenciar_niveis{
+   height: 50px;
+   border-right: solid 2px #9e9c96; 
+   float: left;   
+   color: #fff;
+   text-align: center;
+   line-height: 49px;
+   font-size: 21px;
+   font-family: 'Playfair Display', serif;
+}
+
+.dados_gerenciar_niveis_des, 
+.dados_gerenciar_niveis{
+   color: #000;
+}
+
+#container_dados_gerenciar_niveis{
+   width: 1348px;
+   height: 50px;
+   border: solid 1px #9e9c96;
+   background-color: #fff;
+}
+
+.icones{
+   width: 45px;
+   height: 45px;
+   margin-top: 2px;
+}
+
+.img_user{
+   width: 45px;
+   height: 45px;
+   margin-top: 2px;
+}
+
+
+
+
+
+
+
+
+
+
