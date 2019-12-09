@@ -8,11 +8,15 @@
             require_once('model/DAO/SubcategoriasDAO.php');
 
             if($_SERVER['REQUEST_METHOD'] == "POST"){
+                session_start();
 
                 $this->subcategorias = new Subcategorias();
 
-                $this->subcategorias->setNome($_POST['txtnome']);
-                $this->subcategorias->setCategoria($_POST['sltcat']);
+                if(isset($_POST['txtnome']) AND isset($_POST['sltcat'])){
+                    $this->subcategorias->setNome($_POST['txtnome']);
+                    $this->subcategorias->setCategoria($_POST['sltcat']);
+                }
+                
             }
         }
 
@@ -71,6 +75,30 @@
             }else{
                 echo('Erro ao inserir o registro no bd!');
             }    
+        }
+
+        public function porCategoria($slt){
+            
+            $subcategoriasDAO = new SubcategoriasDAO();
+
+            if($subcategoriasDados = $subcategoriasDAO->selectByIdCat($slt)){
+                
+                $_SESSION['categoria'] = $subcategoriasDados[$cont]->getCodigo();
+                $cont = 0;
+
+                while($cont < count($subcategoriasDados)){
+                    echo("<input type='radio' name='rdosub' value='".$subcategoriasDados[$cont]->getCodigo()."'>".$subcategoriasDados[$cont]->getNome());
+                    $cont++;
+                }
+            }
+            else {
+                die();
+            }
+
+
+            
+
+               
         }
     }
 

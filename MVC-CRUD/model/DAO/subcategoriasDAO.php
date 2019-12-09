@@ -108,6 +108,28 @@
                 return false;
             }   
         }
+
+        public function selectByIdCat($idcat){
+            $sql = "SELECT * FROM tbl_subcategorias WHERE categoria=".$idcat;
+
+            $select = $this->conexao->query($sql);
+
+            $cont = 0;
+            while($rs = $select->fetch(PDO::FETCH_ASSOC)){
+                $listsubcategorias[] = new Subcategorias();
+                $listsubcategorias[$cont]->setCodigo($rs['codigo']);
+                $listsubcategorias[$cont]->setNome($rs['nome']);
+                $cont++;
+            }
+            if(isset($listsubcategorias)){
+                return $listsubcategorias;
+            }
+            else {
+                return false;
+            }
+            
+        }
+
     }
 ?>
 

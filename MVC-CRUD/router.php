@@ -59,7 +59,24 @@
                     $subcategoriasController = new SubcategoriasController();
                     $subcategoriasController->atualizaSubcategoria($id);
                 break;
+
+                case 'PORCATEGORIA':
+                    $slt = $_POST['sltcat'];
+                    $subcategoriasController = new SubcategoriasController();
+                    $subcategoriasController->porCategoria($slt);
+                break; 
                 
+            }
+        break;
+        case 'PRODUTOS':
+            require_once('controller/produtosController.php');
+
+            switch(strtoupper($modo)){
+                case 'CATEGORIAS':
+                    $produtosController = new ProdutosController();
+                    
+                    $produtosController->
+                break;
             }
         break;
     }

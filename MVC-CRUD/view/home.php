@@ -29,7 +29,7 @@
                     ?>
                 </h1>
                 <div class="menu">
-                    <a href="">
+                    <a href="produtosindex.php">
                         <div class="menu_itens">
                             <div class="menu_icone"><img src="view/img/pizza-icon.png" alt="img" title="Produtos" class="img_icon"></div> 
                             <div class="menu_nome letras letra_white">Produtos</div>    
