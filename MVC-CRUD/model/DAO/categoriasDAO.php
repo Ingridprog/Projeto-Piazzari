@@ -41,8 +41,8 @@
             }
         }
 
-        public function selectAllCategorias(){
-            $sql = "SELECT * FROM tbl_categorias";
+        public function selectAllCategorias($cat){
+            $sql = "SELECT * FROM tbl_categorias WHERE codigo <>".$cat;
 
             $select = $this->conexao->query($sql);
 

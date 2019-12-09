@@ -52,7 +52,26 @@
             }
         }
 
+        public function buscaSubcategoria($id){
+            $subcategoriasDAO = new SubcategoriasDAO();
+            $subcategoriasDados = $subcategoriasDAO->selectByIdSubcategorias($id);
 
+            require_once('subcategoriasindex.php');
+            
+        }
+
+        public function atualizaSubcategoria($id){
+            $this->subcategorias->setCodigo($id);
+            
+           
+            $subcategoriasDAO = new SubcategoriasDAO();
+       
+            if($subcategoriasDAO->updateSubcategoria($this->subcategorias)){
+                header('location:subcategoriasindex.php');    
+            }else{
+                echo('Erro ao inserir o registro no bd!');
+            }    
+        }
     }
 
 ?>

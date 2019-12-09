@@ -48,7 +48,18 @@
                     $id = $_GET['id'];
                     $subcategoriasController = new SubcategoriasController();
                     $subcategoriasController->deletaSubcategorias($id);
-                break; 
+                break;
+                case 'BUSCAR':
+                    $id = $_GET['id'];
+                    $subcategoriasController = new SubcategoriasController();
+                    $subcategoriasController->buscaSubcategoria($id);
+                break;
+                case 'EDITAR':
+                    $id = $_GET['id'];
+                    $subcategoriasController = new SubcategoriasController();
+                    $subcategoriasController->atualizaSubcategoria($id);
+                break;
+                
             }
         break;
     }

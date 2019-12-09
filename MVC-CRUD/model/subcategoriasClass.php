@@ -4,6 +4,7 @@
         private $nome;
         private $categoria;
         private $status;
+        private $nomeCat;
 
         public function __construct(){
         }
@@ -46,6 +47,16 @@
         // Recebe o status
         public function setStatus($status){
             return $this->status = $status;
+        }
+
+        // Recebe o nomeCat
+        public function setNomeCat($nomeCat){
+            return $this->nomeCat = $nomeCat;
+        }
+
+        // Retorna o nomeCat
+        public function getNomeCat(){
+            return $this->nomeCat;
         }
     }
 ?>

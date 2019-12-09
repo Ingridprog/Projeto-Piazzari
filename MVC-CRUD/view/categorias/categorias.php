@@ -56,7 +56,7 @@
 
                     $categoriasController = new CategoriasController();
 
-                    $listDados = $categoriasController->listaCategorias();
+                    $listDados = $categoriasController->listaCategorias(0);
 
                     $cont = 0;
 

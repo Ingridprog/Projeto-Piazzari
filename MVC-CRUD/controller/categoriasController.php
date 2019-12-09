@@ -30,10 +30,10 @@
             }
         }
 
-        public function listaCategorias(){
+        public function listaCategorias($cat){
             $categoriasDAO = new CategoriasDAO();
 
-            $listDados = $categoriasDAO->selectAllCategorias();
+            $listDados = $categoriasDAO->selectAllCategorias($cat);
 
             if($listDados){
                 return $listDados;
