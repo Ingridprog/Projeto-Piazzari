@@ -82,9 +82,10 @@
             $subcategoriasDAO = new SubcategoriasDAO();
 
             if($subcategoriasDados = $subcategoriasDAO->selectByIdCat($slt)){
+                $cont = 0;
                 
                 $_SESSION['categoria'] = $subcategoriasDados[$cont]->getCodigo();
-                $cont = 0;
+                
 
                 while($cont < count($subcategoriasDados)){
                     echo("<input type='radio' name='rdosub' value='".$subcategoriasDados[$cont]->getCodigo()."'>".$subcategoriasDados[$cont]->getNome());
@@ -93,13 +94,10 @@
             }
             else {
                 die();
-            }
-
-
-            
-
-               
+            }   
         }
+        
+
     }
 
 ?>

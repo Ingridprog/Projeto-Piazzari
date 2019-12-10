@@ -72,11 +72,17 @@
             require_once('controller/produtosController.php');
 
             switch(strtoupper($modo)){
-                case 'CATEGORIAS':
-                    $produtosController = new ProdutosController();
                     
-                    $produtosController->
+                case 'FOTO':
+                    $produtosController = new ProdutosController();
+                    $produtosController->previewFoto();
                 break;
+                    
+                case 'NOVO':
+                    $produtosController = new ProdutosController();
+                    $produtosController->novoProduto();    
+                break;
+                    
             }
         break;
     }

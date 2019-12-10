@@ -8,6 +8,7 @@
         private $introDestaque;
         private $descricaoDestaque;
         private $desconto;
+        private $foto;
 
         public function __construct(){
 
@@ -91,6 +92,16 @@
         // Recebe o desconto
         public function setDesconto($desconto){
             return $this->desconto = $desconto;
+        }
+        
+        // Retorna a foto
+        public function getFoto(){
+            return $this->foto;
+        }
+
+        // Recebe a foto
+        public function setfoto($desconto){
+            return $this->foto = $foto;
         }
 
     }

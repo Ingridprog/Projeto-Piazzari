@@ -12,6 +12,12 @@
     <script src="view/js/jquery.form.js"></script>
     <script>
         $(document).ready(function(){
+                $('#fileFoto').live('change', function(){
+                    $('#formFoto').ajaxForm({
+                        target: '#img_carrega'
+                    }).submit();
+                });
+            
                 $('#sltcat').live('change', function(){
                     $('#frmselect').ajaxForm({
                         target: '#sub'
@@ -21,6 +27,11 @@
     </script>
 </head>
 <body>
+<form name="frmfoto" id="formFoto" method="post" action="router.php?controller=produtos&modo=foto" enctype="multipart/form-data">
+    <div class="campos center">
+        <div class="txt_input"> Foto: </div> <div class="caixa_input"><input type="file" name="flefoto" value="" class="caixa_campos" id="fileFoto"> </div>
+    </div>     
+</form><br><br>
 <form action="router.php?modo=porcategoria&controller=subcategorias" method="post" name="frmselect" id="frmselect">
     <label> Categoria </label><br>
     
@@ -48,8 +59,11 @@
     <label> Subcategorias </label><br>
     <div id="sub">
             
-    </div>
-    
+    </div><br>
+
+    <div id="img_carrega">
+            
+    </div><br><br>
     <label> Nome </label><br>
     <input type="text" name="txtnome" value=""><br><br>
 
