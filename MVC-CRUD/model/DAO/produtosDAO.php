@@ -21,13 +21,13 @@
 
             $statementDados = array(
                 $produtos->getNome(),
-                $produtos->getNome(),
-                $produtos->getNome(),
-                $produtos->getNome(),
-                $produtos->getNome(),
-                $produtos->getNome(),
-                $produtos->getNome(),
-                $produtos->getNome(),
+                $produtos->getPreco(),
+                $produtos->getDescricao(),
+                $produtos->getDestaque(),
+                $produtos->getIntroDestaque(),
+                $produtos->getDescricaoDestaque(),
+                $produtos->getDesconto(),
+                $produtos->getFoto(),
                 $produtos->getStatus()
             );
 

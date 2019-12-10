@@ -9,6 +9,8 @@
         private $descricaoDestaque;
         private $desconto;
         private $foto;
+        private $categoria;
+        private $subcategoria;
 
         public function __construct(){
 
@@ -100,8 +102,28 @@
         }
 
         // Recebe a foto
-        public function setfoto($desconto){
+        public function setfoto(){
             return $this->foto = $foto;
+        }
+        
+        // Retorna a categoria
+        public function getCategoria(){
+            return $this->categoria;
+        }
+
+        // Recebe a categoria
+        public function setCategoria($categoria){
+            return $this->categoria = $categoria;
+        }
+        
+        // Retorna a subcategoria
+        public function getSubcategoria(){
+            return $this->subcategoria;
+        }
+
+        // Recebe a subcategoria
+        public function setSubcategoria($subcategoria){
+            return $this->subcategoria = $subcategoria;
         }
 
     }
