@@ -33,6 +33,20 @@
                     $categoriasController = new CategoriasController();
                     $categoriasController->deletaCategoria($id);
                 break;
+
+                // STATUS Passo 2
+                case 'STATUSCAT':
+                    // Resgata os valores passados via get
+                    $id = $_GET['id'];
+                    $status = $_GET['status'];
+
+                    // Instancia da classe controller
+                    $categoriasController = new CategoriasController();
+
+                    // Chama o método, passando o id e o status
+                    $categoriasController->statusCategoria($id, $status);
+
+                break;
             }
         break;
 

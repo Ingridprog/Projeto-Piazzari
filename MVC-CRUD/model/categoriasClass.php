@@ -14,7 +14,6 @@
         public function getCodigo(){
             return $this->codigo;
         }
-
         // Recebe o código
         public function setCodigo($codigo){
             return $this->codigo = $codigo;
@@ -24,7 +23,6 @@
         public function getNome(){
             return $this->nome;
         }
-
         // Recebe o nome
         public function setNome($nome){
             return $this->nome = $nome;
@@ -34,8 +32,7 @@
          public function getStatus(){
             return $this->status;
         }
-
-        // Recebe o nome
+        // Recebe o status
         public function setStatus($status){
             return $this->status = $status;
         }

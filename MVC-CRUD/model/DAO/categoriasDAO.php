@@ -97,6 +97,25 @@
             }    
 
         }
+
+        // STATUS Passo 04
+        public function updateStatusCategoria(Categorias $categorias){
+            // Script para executar no bd
+            $sql = "UPDATE tbl_categorias SET status = ? WHERE codigo=".$categorias->getCodigo();
+
+            $statement = $this->conexao->prepare($sql);
+
+            $statementDados = array(
+                $categorias->getStatus()
+            );
+
+            if($statement->execute($statementDados)){
+                return true;
+            }else{
+                return false;
+            }
+
+        }
     }
 
 ?>

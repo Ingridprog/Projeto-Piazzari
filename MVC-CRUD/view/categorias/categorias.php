@@ -65,12 +65,25 @@
                 <div class="container_table_nome">
                     <div class="table_nome_campos letras"><?=$listDados[$cont]->getNome()?></div>
                     <div class="table_nome_campos letras">
-                        <?=$listDados[$cont]->getStatus()?>
                         <a href="router.php?controller=categorias&modo=buscar&id=<?=$listDados[$cont]->getCodigo()?>">
                             <img src="../cms/img/editar.png" alt="img" class="img" title="Editar">
                         </a> 
                         <a href="router.php?controller=categorias&modo=excluir&id=<?=$listDados[$cont]->getCodigo()?>">
                             <img src="../cms/img/excluir.png" alt="img" class="img" title="Excluir" onclick="confirm('Tem certeza que deseja excluir este item?')">
+                        </a>
+                        <!-- Status Passo 01 -->
+                        <a href="router.php?controller=categorias&modo=statuscat&id=<?=$listDados[$cont]->getCodigo()?>&status=<?=$listDados[$cont]->getStatus()?>">
+                            <?php
+                                if($listDados[$cont]->getStatus() == 1){
+                            ?>
+                                <img src="../cms/img/ativa.png" alt="img" class="img" title="Status">
+                            <?php
+                                }else{
+                            ?>
+                                <img src="../cms/img/desativar.png" alt="img" class="img" title="Status">
+                            <?php
+                                }
+                            ?>
                         </a>
                     </div>  
                 </div>

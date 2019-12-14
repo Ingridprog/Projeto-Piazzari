@@ -10,7 +10,134 @@
 
 .container_forms{
     width: 700px;
-    height: 700px;
-    background-color: aqua;
+    height: 910px;
+    border: 0.5px solid #4f4f54;
     margin-bottom: 90px;
 }
+
+
+.divCenter{
+    width: inherit;
+    height: 50px;
+}
+
+.txt_frm_foto{
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 17pt;
+    padding-left: 5px;
+}
+
+.txt_frm{
+    width: 165px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 17pt;
+    padding-left: 15px;
+}
+
+.float-left{
+    float: left;
+}
+
+.caixa_input_img{
+    width: 190px;
+    height: 50px;
+}
+
+.img_input{
+    width: 200px;
+    height: 30px;
+    font-size: 15pt;
+}
+
+#img_carrega{
+    width: 100px;
+    height: 100px;
+    margin-left: 270px;
+    margin-bottom: 15px;
+}
+
+.img_default{
+    width: inherit;
+    height: inherit;
+}
+
+#sltcat{
+    width: 180px;
+    height: 30px;
+    font-size: 17pt;
+    margin-top: 12px;
+}
+
+.letra_slt{
+    font-size: 17pt;
+}
+
+#frmselect{
+    width: 385px;
+    margin-bottom: 15px;
+}
+
+.chk{
+    width: inherit;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#sub{
+    width: 400px;
+    float: left;
+    font-size: 15pt;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.inp_camp{
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.container_inp{
+    width: 700px;
+    height: 70px;
+    /* background-color: lawngreen; */
+}
+
+.font-size{
+    font-size: 17pt;
+}
+
+textarea{
+    resize: none;
+    overflow: auto;
+}
+
+#chkdestaque{
+    width: 30px;
+    height: 30px;
+    margin-top: 12px;
+}
+
+.btn_cat{
+    width: 115px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+#btn_cate{
+    width: inherit;
+    height: inherit;
+    cursor: pointer;
+    border: 1px solid #4F2574;
+    color: #4F2574;
+    background-color: #fff;
+}
+
+#btn_cate:hover{
+    background-color: #4F2574;
+    color: #fff;
+}
+

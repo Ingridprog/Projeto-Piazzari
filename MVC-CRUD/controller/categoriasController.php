@@ -67,7 +67,7 @@
         }
 
         public function deletaCategoria($id){
-            $categoriasDAO = new CategoriasDAO;
+            $categoriasDAO = new CategoriasDAO();
 
             if($categoriasDAO->deleteCategoria($id)){
                 header('location: categoriasindex.php');    
@@ -75,6 +75,35 @@
                 echo('<script>alert("Erro ao executar no DB!")</script>');
                 header('location: categoriasindex.php');
             }
+        }
+
+        // STATUS Passo 03
+        public function statusCategoria($id, $status){
+            // Instancia da classe Categorias 
+           $categoria = new Categorias();
+
+           if($status == 1){
+               $status = 0;
+           }else{
+               $status = 1;
+           }
+
+            // Chama o método set para receber o id e o status    
+           $categoria->setCodigo($id);
+           $categoria->setStatus($status);
+
+            // Instancia da classe CategoriasDAO
+            $categoriasDAO = new CategoriasDAO();
+
+            // Chama o método para atualizar o status no bd 
+            // STATUS Passo 05 se deu certo redireciona para a mesma página
+            if($categoriasDAO->updateStatusCategoria($categoria)){
+                header("location: categoriasindex.php");
+            }else{
+                echo("<script>alert('Erro ao mudar STATUS!')</script>");
+                header("location: categoriasindex.php");
+            }
+
         }
     }
 
