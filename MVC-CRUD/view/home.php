@@ -47,6 +47,12 @@
                             <div class="menu_nome letras letra_white">Subcategorias</div>    
                         </div>  
                     </a>
+                    <a href="relacionamentosindex.php">
+                        <div class="menu_itens">
+                            <div class="menu_icone"><img src="view/img/relacionamentos.png" alt="img" title="relacionamentos" class="img_icon"></div> 
+                            <div class="menu_nome letras letra_white">Relacionamentos</div>    
+                        </div>  
+                    </a>
                 </div>
                 <a href="../paginas/login.php">
                     <div class="sair titulo letra_white center">

@@ -74,11 +74,17 @@
                     $subcategoriasController->atualizaSubcategoria($id);
                 break;
 
-                case 'PORCATEGORIA':
-                    $slt = $_POST['sltcat'];
+                case 'STATUSSUB':
+                    // Resgata os valores passados via get
+                    $id = $_GET['id'];
+                    $status = $_GET['status'];
+
+                    // Instancia da classe controller
                     $subcategoriasController = new SubcategoriasController();
-                    $subcategoriasController->porCategoria($slt);
-                break; 
+
+                    // Chama o método, passando o id e o status
+                    $subcategoriasController->statussubcategoria($id, $status);     
+                break;
                 
             }
         break;

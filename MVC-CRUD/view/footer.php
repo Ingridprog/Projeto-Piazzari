@@ -1,6 +1,6 @@
 <footer>
     <div class="conteudo center">
-        <h1 class="rodape titulo"> Desenvolvido por Ingrid Pereira </h1>
+        <p class="rodape titulo"> Desenvolvido por Ingrid Pereira </p>
     </div>
 </footer>
 

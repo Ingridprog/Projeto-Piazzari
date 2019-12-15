@@ -11,12 +11,7 @@
                 session_start();
 
                 $this->subcategorias = new Subcategorias();
-
-                if(isset($_POST['txtnome']) AND isset($_POST['sltcat'])){
-                    $this->subcategorias->setNome($_POST['txtnome']);
-                    $this->subcategorias->setCategoria($_POST['sltcat']);
-                }
-                
+                $this->subcategorias->setNome($_POST['txtnome']);
             }
         }
 
@@ -67,7 +62,6 @@
         public function atualizaSubcategoria($id){
             $this->subcategorias->setCodigo($id);
             
-           
             $subcategoriasDAO = new SubcategoriasDAO();
        
             if($subcategoriasDAO->updateSubcategoria($this->subcategorias)){
@@ -77,26 +71,52 @@
             }    
         }
 
-        public function porCategoria($slt){
+        // public function porCategoria($slt){
             
+        //     $subcategoriasDAO = new SubcategoriasDAO();
+
+        //     if($subcategoriasDados = $subcategoriasDAO->selectByIdCat($slt)){
+        //         $cont = 0;
+                
+        //         $_SESSION['categoria'] = $subcategoriasDados[$cont]->getCodigo();
+                
+
+        //         while($cont < count($subcategoriasDados)){
+        //             echo("<input type='radio' name='rdosub' value='".$subcategoriasDados[$cont]->getCodigo()."'>".$subcategoriasDados[$cont]->getNome());
+        //             $cont++;
+        //         }
+        //     }
+        //     else {
+        //         die();
+        //     }   
+        // }
+        
+        public function statussubcategoria($id, $status){
+            // Instancia da classe Subcategorias 
+            $subcategoria = new Subcategorias();
+
+            if($status == 1){
+                $status = 0;
+            }else{
+                $status = 1;
+            }
+
+            // Chama o método set para receber o id e o status    
+            $subcategoria->setCodigo($id);
+            $subcategoria->setStatus($status);
+
+            // Instancia da classe CategoriasDAO
             $subcategoriasDAO = new SubcategoriasDAO();
 
-            if($subcategoriasDados = $subcategoriasDAO->selectByIdCat($slt)){
-                $cont = 0;
-                
-                $_SESSION['categoria'] = $subcategoriasDados[$cont]->getCodigo();
-                
-
-                while($cont < count($subcategoriasDados)){
-                    echo("<input type='radio' name='rdosub' value='".$subcategoriasDados[$cont]->getCodigo()."'>".$subcategoriasDados[$cont]->getNome());
-                    $cont++;
-                }
+            // Chama o método para atualizar o status no bd 
+            // STATUS Passo 05 se deu certo redireciona para a mesma página
+            if($subcategoriasDAO->updateStatussubcategoria($subcategoria)){
+                header("location: subcategoriasindex.php");
+            }else{
+                echo("<script>alert('Erro ao mudar STATUS!')</script>");
+                header("location: subcategoriasindex.php");
             }
-            else {
-                die();
-            }   
         }
-        
 
     }
 

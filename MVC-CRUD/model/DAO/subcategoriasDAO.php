@@ -20,13 +20,12 @@
         }
 
         public function insertSubcategoria(Subcategorias $subcategorias){
-            $sql = "INSERT INTO tbl_subcategorias VALUES (null, ?, ?, ?)";
+            $sql = "INSERT INTO tbl_subcategorias VALUES (null, ?, ?)";
 
             $statement = $this->conexao->prepare($sql);
 
             $statementDados = array(
                 $subcategorias->getNome(),
-                $subcategorias->getCategoria(),
                 $subcategorias->getStatus()
             );
         
@@ -38,19 +37,14 @@
         }
 
         public function selectAllSubcategorias(){
-            $sql = "SELECT tbl_subcategorias.*,tbl_categorias.nome,
-            tbl_subcategorias.nome AS nomeSub, tbl_categorias.nome AS nomeCat
-            FROM tbl_subcategorias INNER JOIN tbl_categorias ON tbl_subcategorias.categoria=
-            tbl_categorias.codigo";
+            $sql = "SELECT * FROM tbl_subcategorias";
             
             $select = $this->conexao->query($sql);
             $cont = 0;
             while($rs = $select->fetch(PDO::FETCH_ASSOC)){
                 $listsubcategorias[] = new Subcategorias();
                 $listsubcategorias[$cont]->setCodigo($rs['codigo']);
-                $listsubcategorias[$cont]->setNome($rs['nomeSub']);
-                $listsubcategorias[$cont]->setNomeCat($rs['nomeCat']);
-                $listsubcategorias[$cont]->setCategoria($rs['categoria']);
+                $listsubcategorias[$cont]->setNome($rs['nome']);
                 $listsubcategorias[$cont]->setStatus($rs['status']);
                 $cont++;
             }
@@ -74,60 +68,71 @@
         }
 
         public function selectByIdSubcategorias($id){
-            $sql = "SELECT tbl_subcategorias.*,tbl_categorias.nome,
-            tbl_subcategorias.nome AS nomeSub, tbl_categorias.nome AS nomeCat
-            FROM tbl_subcategorias INNER JOIN tbl_categorias ON tbl_subcategorias.categoria=
-            tbl_categorias.codigo WHERE tbl_subcategorias.codigo = ".$id;
+            $sql = "SELECT * FROM tbl_subcategorias WHERE codigo = ".$id;
 
             $select = $this->conexao->query($sql);
             if($rs = $select->fetch(PDO::FETCH_ASSOC)){
                 $listsubcategorias = new Subcategorias();
                 $listsubcategorias->setCodigo($rs['codigo']);
-                $listsubcategorias->setNome($rs['nomeSub']);
-                $listsubcategorias->setCategoria($rs['categoria']);
-                $listsubcategorias->setNomeCat($rs['nomeCat']);
-                
+                $listsubcategorias->setNome($rs['nome']);
             }
             return $listsubcategorias;
         }
 
         public function updateSubcategoria(Subcategorias $subcategorias){
-            $sql = "UPDATE tbl_subcategorias SET nome = ?, categoria = ? WHERE codigo= ?";
+            $sql = "UPDATE tbl_subcategorias SET nome = ? WHERE codigo= ?";
             
             $statement = $this->conexao->prepare($sql);
             
             $statementDados = array(
                 $subcategorias->getNome(),
-                $subcategorias->getCategoria(),
                 $subcategorias->getCodigo()
             );
             
             if($statement->execute($statementDados)){
                 return true;
             }else{
-                return false;
+                var_dump($statementDados);
+                //return false;
             }   
         }
 
-        public function selectByIdCat($idcat){
-            $sql = "SELECT * FROM tbl_subcategorias WHERE categoria=".$idcat;
+        // public function selectByIdCat($idcat){
+        //     $sql = "SELECT * FROM tbl_subcategorias WHERE categoria=".$idcat;
 
-            $select = $this->conexao->query($sql);
+        //     $select = $this->conexao->query($sql);
 
-            $cont = 0;
-            while($rs = $select->fetch(PDO::FETCH_ASSOC)){
-                $listsubcategorias[] = new Subcategorias();
-                $listsubcategorias[$cont]->setCodigo($rs['codigo']);
-                $listsubcategorias[$cont]->setNome($rs['nome']);
-                $cont++;
-            }
-            if(isset($listsubcategorias)){
-                return $listsubcategorias;
-            }
-            else {
+        //     $cont = 0;
+        //     while($rs = $select->fetch(PDO::FETCH_ASSOC)){
+        //         $listsubcategorias[] = new Subcategorias();
+        //         $listsubcategorias[$cont]->setCodigo($rs['codigo']);
+        //         $listsubcategorias[$cont]->setNome($rs['nome']);
+        //         $cont++;
+        //     }
+        //     if(isset($listsubcategorias)){
+        //         return $listsubcategorias;
+        //     }
+        //     else {
+        //         return false;
+        //     }
+            
+        // }
+
+        public function updateStatussubcategoria(Subcategorias $subcategoria){
+            // Script para executar no bd
+            $sql = "UPDATE tbl_subcategorias SET status = ? WHERE codigo=".$subcategoria->getCodigo();
+
+            $statement = $this->conexao->prepare($sql);
+
+            $statementDados = array(
+                $subcategoria->getStatus()
+            );
+
+            if($statement->execute($statementDados)){
+                return true;
+            }else{
                 return false;
             }
-            
         }
 
     }

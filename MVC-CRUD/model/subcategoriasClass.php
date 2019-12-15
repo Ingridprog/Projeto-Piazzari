@@ -2,9 +2,7 @@
     class Subcategorias{
         private $codigo;
         private $nome;
-        private $categoria;
         private $status;
-        private $nomeCat;
 
         public function __construct(){
         }
@@ -29,16 +27,6 @@
             return $this->nome = $nome;
         }
 
-        // Retorna a categoria
-        public function getCategoria(){
-            return $this->categoria;
-        }
-
-        // Recebe o categoria
-        public function setCategoria($categoria){
-            return $this->categoria = $categoria;
-        }
-
          // Retorna o status
          public function getStatus(){
             return $this->status;
@@ -49,14 +37,5 @@
             return $this->status = $status;
         }
 
-        // Recebe o nomeCat
-        public function setNomeCat($nomeCat){
-            return $this->nomeCat = $nomeCat;
-        }
-
-        // Retorna o nomeCat
-        public function getNomeCat(){
-            return $this->nomeCat;
-        }
     }
 ?>
