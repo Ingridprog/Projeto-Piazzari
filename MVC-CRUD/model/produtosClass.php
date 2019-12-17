@@ -1,16 +1,15 @@
 <?php
     class Produtos{
         private $codigo;
+        private $foto;
         private $nome;
         private $preco;
         private $descricao;
-        private $destaque 
+        private $destaque;
         private $introDestaque;
         private $descricaoDestaque;
         private $desconto;
-        private $foto;
-        private $categoria;
-        private $subcategoria;
+        private $status;
 
         public function __construct(){
 
@@ -102,30 +101,20 @@
         }
 
         // Recebe a foto
-        public function setfoto(){
+        public function setFoto($foto){
             return $this->foto = $foto;
         }
+
+        // Retorna o status
+        public function getStatus(){
+            return $this->status;
+        }
+
+        // Recebe o status
+        public function setStatus($status){
+            return $this->status = $status;
+        }
         
-        // Retorna a categoria
-        public function getCategoria(){
-            return $this->categoria;
-        }
-
-        // Recebe a categoria
-        public function setCategoria($categoria){
-            return $this->categoria = $categoria;
-        }
-        
-        // Retorna a subcategoria
-        public function getSubcategoria(){
-            return $this->subcategoria;
-        }
-
-        // Recebe a subcategoria
-        public function setSubcategoria($subcategoria){
-            return $this->subcategoria = $subcategoria;
-        }
-
     }
 
 ?>

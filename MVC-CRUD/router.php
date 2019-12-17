@@ -102,6 +102,18 @@
                     $produtosController = new ProdutosController();
                     $produtosController->novoProduto();    
                 break;
+
+                case 'BUSCAR':
+                    $id = $_GET['id'];
+                    $produtosController = new ProdutosController();
+                    $produtosController->buscaProduto($id);
+                break;
+
+                case 'EDITAR':
+                    $id = $_GET['id'];
+                    $produtosController = new ProdutosController();
+                    $produtosController->atualizaProdutos($id);
+                break;
                     
             }
         break;

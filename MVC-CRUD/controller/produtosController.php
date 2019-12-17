@@ -1,6 +1,8 @@
 <?php
      class ProdutosController{
-        
+        private $produtos;
+        private $produtoDAO;
+
         public function __construct(){
             require_once('model/produtosClass.php');
             require_once('model/DAO/produtosDAO.php');
@@ -8,32 +10,42 @@
             if($_SERVER['REQUEST_METHOD'] == "POST"){
                 session_start();
 
-                $this->produtos = new produtos();
-
+                $this->produtos = new Produtos();
                 if(isset($_POST['txtnome'])){
                     $this->produtos->setNome($_POST['txtnome']);
                     $this->produtos->setPreco($_POST['frmpreco']);
                     $this->produtos->setDescricao($_POST['txtdescricao']);
-                    $this->produtos->setDestaque($_POST['chkdestaque']);
-                    $this->produtos->setIntroDestaque($_POST['txtdestaqueintro']);
-                    $this->produtos->setDescricaoDestaque($_POST['txtdestaque']);
                     $this->produtos->setDesconto($_POST['frmdesconto']);
                 }
                 
-                
-            }    
+            }
+            $this->produtoDAO = new ProdutosDAO();    
         }
          
         public function novoProduto(){
-            $produtosDAO = new ProdutosDAO();
+            $vazio = "";
+
+            $this->produtos->setFoto($_SESSION['previewFoto']);
 
             $this->produtos->setStatus(1);
 
-            if($produtosDAO->insertProduto($this->produtos)){
-                header('location: produtossindex.php');
+            if(isset($_POST['txtdestaqueintro'])){
+                $this->produtos->setIntroDestaque($_POST['txtdestaqueintro']);
             }else{
-                echo('<script>alert("Erro ao Inserir no DB")</script>');
-                header('location: produtossindex.php');
+                $this->produtos->setIntroDestaque($vazio);
+            }
+
+            if(isset($_POST['txtdestaque'])){
+                $this->produtos->setDescricaoDestaque($_POST['txtdestaque']);
+            }else{
+                $this->produtos->setDescricaoDestaque($vazio);
+            }
+
+            if($this->produtoDAO->insertProduto($this->produtos)){
+                header('location: produtosindex.php');
+            }else{
+                echo('<script>alert("Erro ao Inserir no DB");</script>');
+                //header('location: produtosindex.php');
             }
         } 
         
@@ -64,13 +76,13 @@
 
                         $arquivo_temp = $_FILES['flefoto']['tmp_name'];
 
-                        $diretorio = "../img/";
+                        $diretorio = "view/img/";
 
                         if(move_uploaded_file($arquivo_temp, $diretorio.$foto)){
-                            session_start();
+                           
                             $_SESSION['previewFoto'] = $foto;
 
-                            echo("<img src='../img/".$foto."'class='img_editar'>");
+                            echo("<img src='view/img/".$foto."' class='img_default'>");
 
                         }else{
                             echo("errr");
@@ -91,6 +103,68 @@
                         alert('O tamanho ou o tipo não corresponde ao que o servidor aceita');
                    </script>");    
             }
+        }
+
+
+        public function listaProdutos(){
+            $produtosDAO = new ProdutosDAO();
+
+            $listDados = $produtosDAO->selectAllProdutos();
+
+            if($listDados){
+                return $listDados;
+            }else{
+                die(); 
+            }
+        }
+
+        public function buscaProduto($id){
+            $produtoDAO = new ProdutosDAO();
+            
+            $produtos = $produtoDAO->selectByIdProdutos($id);
+
+            require_once('produtosindex.php');
+        }
+
+        public function atualizaProdutos($id){
+            $produtosDAO = new ProdutosDAO();
+
+            if(!isset($_SESSION['previewFoto'])){
+                $this->produtos->setFoto($_SESSION['nomeFoto']);
+            }
+            else{
+                $this->produtos->setFoto($_SESSION['previewFoto']);
+                $fotoAntiga = $_SESSION['nomeFoto'];
+            }
+                
+
+            $this->produtos->setCodigo($id);
+
+            if(isset($_POST['txtdestaqueintro'])){
+                $this->produtos->setIntroDestaque($_POST['txtdestaqueintro']);
+            }else{
+                $this->produtos->setIntroDestaque($vazio);
+            }
+
+            if(isset($_POST['txtdestaque'])){
+                $this->produtos->setDescricaoDestaque($_POST['txtdestaque']);
+            }else{
+                $this->produtos->setDescricaoDestaque($vazio);
+            }
+
+
+            if($produtosDAO->updateProduto($this->produtos)){
+                if(isset($fotoAntiga))
+                    unlink('view/img/'.$fotoAntiga);
+
+                unset($_SESSION['nomeFoto']);
+
+                header("location: produtosindex.php");
+            }else{
+                echo("alert('Errooou')");
+                header("location: produtosindex.php");
+            }
+
         }
         
     }

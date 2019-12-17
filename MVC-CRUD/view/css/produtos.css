@@ -10,7 +10,7 @@
 
 .container_forms{
     width: 700px;
-    height: 910px;
+    height: 800px;
     border: 0.5px solid #4f4f54;
     margin-bottom: 90px;
 }
@@ -101,8 +101,9 @@
 }
 
 .container_inp{
-    width: 700px;
+    width: 500px;
     height: 70px;
+    margin-top: 10px;
     /* background-color: lawngreen; */
 }
 
@@ -124,7 +125,7 @@ textarea{
 .btn_cat{
     width: 115px;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 #btn_cate{
@@ -141,3 +142,73 @@ textarea{
     color: #fff;
 }
 
+.titulo_gerencia{
+    background-color: #4F2574;
+    color: #fff;   
+    width: 1300px;
+    height: 70px;
+    font-size: 20pt;
+    line-height: 70px;
+    text-align: center;
+}
+
+.tabela_prod{
+    display: table;
+    width: 1299px;
+    height: 400px;
+    margin-bottom: 100px;
+}
+
+.camp_prod_pq{
+    width: 160px;
+    float: left;
+    height: 70px;
+    border: 1px solid #4f4f54;
+}
+
+.camp_prod_pq_dados{
+    width: 160px;
+    float: left;
+    height: 100px;
+    line-height: 100px;
+    border: 1px solid #4f4f54;
+}
+
+.camp_prod_gr{
+    width: 214.8px;
+    float: left;
+    height: 70px;
+    line-height: 70px;
+    border: 1px solid #4f4f54;
+}
+
+.camp_prod_gr_dados{
+    width: 214.8px;
+    float: left;
+    height: 100px;
+    line-height: 100px;
+    font-size: 17pt;
+    overflow: auto;
+    border: 1px solid #4f4f54;    
+}
+
+.prod_img{
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.letras_campos{
+    font-size: 17pt;
+    line-height: 70px;
+    font-weight: bold;
+}
+
+.margin-top-10{
+    margin-top: 10px;
+}
+
+.container_acoes{
+    width: inherit;
+    height: 90px;
+}
